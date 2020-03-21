@@ -1,12 +1,12 @@
 pipeline{
 	agent none
 
-		stages('checkout'){
+		stage('checkout'){
 			step{
                             sh git clone 'https://github.com/edureka-devops/projCert.git'
 			}			
 		}
-		stages('build'){
+		stage('build'){
 			step{
 			sh mvn compile
 			}			
