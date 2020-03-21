@@ -3,7 +3,8 @@ pipeline{
             stages{
 		stage('checkout'){
 			steps{
-                            sh 'git clone \'https://github.com/edureka-devops/projCert.git\''
+			    sh rm - R /var/lib/jenkins/workspace/devopsCertproj/*
+                            sh 'git clone \'https://github.com/gabrielf/maven-samples.git\''
 			}			
 		}
 		stage('build'){
