@@ -1,6 +1,6 @@
 pipeline{
 	agent none
-
+            stages{
 		stage('checkout'){
 			step{
                             sh git clone 'https://github.com/edureka-devops/projCert.git'
@@ -21,4 +21,5 @@ pipeline{
             	        } 
                     }
 	        } 
+	  }
 }
