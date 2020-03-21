@@ -3,7 +3,7 @@ pipeline{
 
 		stages('checkout'){
 			step{
-				sh git clone https://github.com/edureka-devops/projCert.git
+				git clone https://github.com/edureka-devops/projCert.git
 			}			
 		}
 		stages('build'){
